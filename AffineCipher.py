@@ -44,7 +44,7 @@ def affine_encrypt(text, key):
 
 def affine_decrypt(cipher, key):
 	return ''.join([ chr((( modinv(key[0], 26)*(ord(c) - ord('A') - key[1]))
-# 					% 26) + ord('A')) for c in cipher ])
+ 					% 26) + ord('A')) for c in cipher ])
 
 
 def main():
